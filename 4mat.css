@@ -53,7 +53,7 @@ input{
     width: 300px;
     height: 20px;
     font-size: 16px;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
     margin: 5px;
     padding: 10px;
@@ -111,7 +111,7 @@ a{
     background-color: rgb(225, 200, 153);
     color: rgb(17, 48, 48);
     margin-top: 10px;
-    transition-duration: 200ms;
+    transition-duration: 150ms;
     font-size: 15px;
 }
 
