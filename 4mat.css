@@ -7,6 +7,11 @@ body{
     background-color: rgb(178, 218, 233);
 }
 
+h1{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 5px;
+}
+
 .main{
     display: flex;
 }
@@ -140,8 +145,6 @@ a{
     background-color: rgb(152, 205, 226);
 }
 
-
-
 /* The popup form - hidden by default */
 .form-popup {
     background-color: rgb(152, 205, 226);
@@ -162,5 +165,15 @@ a{
 }
 
 .registerinput{
-    width: 375px;
+    width: 376px;
+}
+
+.btna{
+    margin: 10px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: rgb(26, 86, 175);
+}
+
+.btna:hover{
+    text-decoration: underline;
 }
