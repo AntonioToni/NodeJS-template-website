@@ -1,5 +1,6 @@
 p{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 5px;
 }
 
 body{
@@ -70,12 +71,13 @@ a{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 5px;
 }
-.forgotpw{
+
+.anodeco{
     color: rgb(25, 98, 158);
     text-decoration: none;
 }
 
-.forgotpw:hover{
+.anodeco:hover{
     text-decoration: underline;
 }
 
@@ -136,4 +138,29 @@ a{
 
 .signbtn:hover{
     background-color: rgb(152, 205, 226);
+}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    background-color: rgb(152, 205, 226);
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0px 0px 8px rgb(40, 104, 129);
+    border-left: 8px solid rgb(73, 81, 121);
+    color: rgb(7, 11, 22);
+    border-radius: 10px;
+}
+
+.name{
+    width: 170px;
+}
+
+.registerinput{
+    width: 375px;
 }
