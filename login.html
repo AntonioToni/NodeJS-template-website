@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script language="JavaScript" type="text/javascript" src="jQuery.js"></script>
+    <script language="JavaScript" type="text/javascript" src="register.js"></script> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
     <title>4mat - Login</title>
     <link rel="stylesheet" href="4mat.css">
-    <script src="register.js"></script> 
 </head>
 <body>
     <div class="main">
@@ -38,6 +39,15 @@
                 <input type="text" placeholder="Email" name="email" required class="registerinput">
                 <br>
                 <input type="password" placeholder="Lozinka" name="psw" required class="registerinput">
+                <br>
+                <label>Datum rođenja:</label>
+                <br>
+                <select id ="year" name = "yyyy" onchange="change_year(this)" class="selectbday">
+                </select>
+                <select  id ="month" name = "mm" onchange="change_month(this)" class="selectbday">
+                </select>
+                <select id ="day" name = "dd" class="selectbday">
+                </select>
                 <br>
                 <p style="font-size: smaller;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
                 <button type="submit" class="registerbutton">Registriraj se</button>

@@ -12,6 +12,12 @@ h1{
     margin: 5px;
 }
 
+label{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 10px;
+    padding: 5px; 
+}
+
 .main{
     display: flex;
 }
@@ -176,4 +182,10 @@ a{
 
 .btna:hover{
     text-decoration: underline;
+}
+
+.selectbday{
+    width: 125px;
+    margin: 4px;
+    padding: 5px;
 }
