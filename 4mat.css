@@ -18,6 +18,13 @@ label{
     padding: 5px; 
 }
 
+select{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(23, 145, 194);
+    border-radius: 5px;
+}
+
 .main{
     display: flex;
 }
