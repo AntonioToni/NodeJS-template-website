@@ -30,7 +30,7 @@ input{
     height: 20px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 5px;
     padding: 10px;
     border: 1px solid rgb(23, 145, 194);
@@ -38,7 +38,7 @@ input{
 }
 
 input:focus{
-    outline: 2px solid rgb(23, 145, 194);
+    outline: 1px solid rgb(23, 145, 194);
 }
 
 button{
@@ -141,7 +141,7 @@ a{
 .navbar{
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     overflow: hidden;
     background-color: rgb(149, 213, 238);
 }
