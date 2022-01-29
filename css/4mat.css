@@ -25,6 +25,34 @@ select{
     border-radius: 5px;
 }
 
+input{
+    width: 300px;
+    height: 20px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgb(23, 145, 194);
+    transition-duration: 20ms;
+}
+
+input:focus{
+    outline: 2px solid rgb(23, 145, 194);
+}
+
+button{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    margin: 5px;
+    display: inline;
+}
+
+a{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin: 5px;
+}
+
 .main{
     display: flex;
 }
@@ -60,34 +88,6 @@ select{
     font-weight: normal;
     line-height: 32px;
     width: 500px;
-}
-
-input{
-    width: 300px;
-    height: 20px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 10px;
-    border: 1px solid rgb(23, 145, 194);
-    transition-duration: 20ms;
-}
-
-input:focus{
-    outline: 2px solid rgb(23, 145, 194);
-}
-
-button{
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 16px;
-    margin: 5px;
-    display: inline;
-}
-
-a{
-    font-family: 'Be Vietnam Pro', sans-serif;
-    margin: 5px;
 }
 
 .anodeco{
