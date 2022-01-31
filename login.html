@@ -13,45 +13,47 @@
     <link rel="stylesheet" href="css/4mat.css">
 </head>
 <body>
-    <div class="main">
-        <div class="box">
-            <p class="title">4mat</p>
-            <form class="aligncenter">
-                <div>
-                    <input type="text" name="" id="email" placeholder="Email"> <br>
-                    <input type="password" name="" id="" placeholder="Lozinka"> <br>
-                </div>
-                <div>
-                    <button class="loginbutton">Prijavi se</button> <br>
-                </div>
-                <a class="anodeco" href="">Zaboravili ste lozinku?</a> <br>
-                <hr>
-                <button type="button" class="registerbutton" onclick="openForm()">Kreiraj novi korisnički račun</button>
-            </form>
+    <main>
+        <div class="main">
+            <div class="box">
+                <p class="title">4mat</p>
+                <form class="aligncenter">
+                    <div>
+                        <input type="text" name="" id="email" placeholder="Email"> <br>
+                        <input type="password" name="" id="" placeholder="Lozinka"> <br>
+                    </div>
+                    <div>
+                        <button class="loginbutton">Prijavi se</button> <br>
+                    </div>
+                    <a class="anodeco" href="">Zaboravili ste lozinku?</a> <br>
+                    <hr>
+                    <button type="button" class="registerbutton" onclick="openForm()">Kreiraj novi korisnički račun</button>
+                </form>
+            </div>
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="aligncenter">
+                    <h1>Izradite novi korisnički račun</h1>
+                    <p>Brzo i jednostavno.</p>
+                    <input type="text" placeholder="Ime" name="name" required class="name">
+                    <input type="text" placeholder="Prezime" name="lastname" required class="name">
+                    <br>
+                    <input type="text" placeholder="Email" name="email" required class="registerinput">
+                    <br>
+                    <input type="password" placeholder="Lozinka" name="psw" required class="registerinput">
+                    <br>
+                    <label>Datum rođenja:</label>
+                    <br>
+                    <select id ="day" name = "dd" class="selectbday"></select>
+                    <select  id ="month" name = "mm" onchange="change_month(this)" class="selectbday"></select>
+                    <select id ="year" name = "yyyy" onchange="change_year(this)" class="selectbday"></select>
+                    <br>
+                    <p style="font-size: smaller;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
+                    <button type="submit" class="registerbutton">Registriraj se</button>
+                    <br>
+                    <a type="button" class="btna" onclick="closeForm()">Već imate korisnički račun?</a>
+                </form>
+            </div>
         </div>
-        <div class="form-popup" id="myForm">
-            <form action="/action_page.php" class="aligncenter">
-                <h1>Izradite novi korisnički račun</h1>
-                <p>Brzo i jednostavno.</p>
-                <input type="text" placeholder="Ime" name="name" required class="name">
-                <input type="text" placeholder="Prezime" name="lastname" required class="name">
-                <br>
-                <input type="text" placeholder="Email" name="email" required class="registerinput">
-                <br>
-                <input type="password" placeholder="Lozinka" name="psw" required class="registerinput">
-                <br>
-                <label>Datum rođenja:</label>
-                <br>
-                <select id ="day" name = "dd" class="selectbday"></select>
-                <select  id ="month" name = "mm" onchange="change_month(this)" class="selectbday"></select>
-                <select id ="year" name = "yyyy" onchange="change_year(this)" class="selectbday"></select>
-                <br>
-                <p style="font-size: smaller;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
-                <button type="submit" class="registerbutton">Registriraj se</button>
-                <br>
-                <a type="button" class="btna" onclick="closeForm()">Već imate korisnički račun?</a>
-            </form>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
