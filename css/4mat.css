@@ -140,6 +140,7 @@ a{
 
 .navbar{
     list-style-type: none;
+    width: 100%;
     margin: 0;
     padding: 5px;
     overflow: hidden;
