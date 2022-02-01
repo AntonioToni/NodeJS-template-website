@@ -135,7 +135,7 @@ a{
 .navbar-items{
     display: inline;
     float: right;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 .navbar{
