@@ -1,7 +1,6 @@
 p{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 5px;
-    color: black;
 }
 
 body{
@@ -54,10 +53,6 @@ a{
     margin: 5px;
 }
 
-main{
-    display: grid;
-}
-
 .main{
     display: flex;
 }
@@ -68,8 +63,7 @@ main{
 
 .box{
     background-color: rgb(152, 205, 226);
-    width: 60vw;
-    margin-top: auto;
+    width: fit-content;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -84,15 +78,16 @@ main{
 .title{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin-top: 0px;
-    font-size: clamp(24px, 5.5vw, 36px);
+    font-size: 45px;
     color: rgb(0, 28, 111);
 }
 
 .desc{
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: clamp(16px, 4vw, 22px);
+    font-size: 20px;
     font-weight: normal;
-
+    line-height: 32px;
+    width: 500px;
 }
 
 .anodeco{
