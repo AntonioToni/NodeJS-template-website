@@ -63,7 +63,7 @@ a{
 
 .box{
     background-color: rgb(152, 205, 226);
-    width: fit-content;
+    width: clamp(200px, 50%, 600px);
     position: absolute;
     top: 50%;
     left: 50%;
