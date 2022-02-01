@@ -58,6 +58,10 @@ main{
     display: grid;
 }
 
+@media screen and (max-width: 600px){
+    
+}
+
 .main{
     display: flex;
 }
@@ -83,13 +87,13 @@ main{
 .title{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin-top: 0px;
-    font-size: 3vw;
+    font-size: 7vmin;
     color: rgb(0, 28, 111);
 }
 
 .desc{
     font-family: 'Be Vietnam Pro', sans-serif;
-
+    font-size: 3.5vmin;
     font-weight: normal;
 
 }
