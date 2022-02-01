@@ -63,8 +63,8 @@ a{
 
 .box{
     background-color: rgb(152, 205, 226);
-    width: fit-content;
     position: absolute;
+    width: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -87,7 +87,6 @@ a{
     font-size: 20px;
     font-weight: normal;
     line-height: 32px;
-    width: 500px;
 }
 
 .anodeco{
@@ -199,4 +198,14 @@ a{
     width: 125px;
     margin: 4px;
     padding: 5px;
+}
+
+@media (max-width: 500px) {
+    .box{
+        width: 340px;
+    }
+    .desc{
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
