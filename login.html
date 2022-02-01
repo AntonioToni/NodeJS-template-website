@@ -40,8 +40,8 @@
                 </div>
                 <div class="form-popup" id="myForm">
                     <form action="/action_page.php" class="aligncenter">
-                        <h1>Izradite novi korisnički račun</h1>
-                        <p>Brzo i jednostavno.</p>
+                        <h2 class="register-text">Registriraj se</h2>
+                        <p class="register-text">Brzo i jednostavno.</p>
                         <input type="text" placeholder="Ime" name="name" required class="name">
                         <input type="text" placeholder="Prezime" name="lastname" required class="name">
                         <br>
@@ -49,13 +49,12 @@
                         <br>
                         <input type="password" placeholder="Lozinka" name="psw" required class="registerinput">
                         <br>
-                        <label>Datum rođenja:</label>
-                        <br>
+                        <p class="register-text">Datum rođenja:</p>
                         <select id ="day" name = "dd" class="selectbday"></select>
                         <select  id ="month" name = "mm" onchange="change_month(this)" class="selectbday"></select>
                         <select id ="year" name = "yyyy" onchange="change_year(this)" class="selectbday"></select>
                         <br>
-                        <p style="font-size: smaller;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
+                        <p class="register-text" style="font-size: smaller;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
                         <button type="submit" class="registerbutton">Registriraj se</button>
                         <br>
                         <a type="button" class="btna" onclick="closeForm()">Već imate korisnički račun?</a>
