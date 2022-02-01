@@ -223,12 +223,16 @@ a{
         line-height: 22px;
     }
     .box-login{
-        width: 300px;
+        width: 340px;
     }
     input{
         width: 280px;
+        font-size: 16px;
     }
     .loginbutton{
-        width: 300px;
+        width: 280px;
+    }
+    .registerbutton{
+        font-size: 13px;
     }
 }
