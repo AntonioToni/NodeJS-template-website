@@ -227,7 +227,8 @@ a{
 
 .containernav{
     display: inline-block;
-    position: relative;
+    position: fixed;
+    top: 0px;
     margin: 10px;
     margin-top: 15px;
     cursor: pointer;
