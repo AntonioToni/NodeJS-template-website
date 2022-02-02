@@ -59,6 +59,11 @@ a{
     margin: 5px;
 }
 
+span{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    color: rgb(178, 218, 233);
+}
+
 .main{
     display: flex;
 }
@@ -251,6 +256,11 @@ a{
 
 .sidenavexpand{
     width: 250px;
+}
+
+.hrnav{
+    background-color: rgb(178, 218, 233);
+    opacity: 0.5;
 }
 
 .sidenav a{
