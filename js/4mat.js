@@ -94,9 +94,11 @@ var click = 0;
 function openNav(x) {
     if (click == 0) {
         $(".sidenav").css("width", "240px");
+        $(".containernav").css("padding-left", "160px")
         click = 1;
     } else {
         $(".sidenav").css("width", "0px");
+        $(".containernav").css("padding-left", "0px")
         click = 0;
     }
     x.classList.toggle("change");

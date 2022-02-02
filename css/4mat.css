@@ -233,6 +233,7 @@ a{
     margin-top: 15px;
     cursor: pointer;
     z-index: 2;
+    transition: 535ms;
 }
 
 .sidenav{
