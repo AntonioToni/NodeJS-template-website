@@ -112,6 +112,7 @@ a{
 .anodeco{
     color: rgb(25, 98, 158);
     text-decoration: none;
+    margin: 0;
 }
 
 .anodeco:hover{
@@ -250,5 +251,20 @@ a{
     }
     .registerbutton{
         font-size: 13px;
+    }
+    .form-popup{
+        width: 350px;
+    }
+    .name{
+        width: 150px;
+    }
+    .registerinput{
+        width: 314px;
+    }
+    h2{
+        font-size: 34px;
+    }
+    .selectbday{
+        width: 96px;
     }
 }
