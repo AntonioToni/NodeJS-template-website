@@ -90,9 +90,6 @@ function change_month(select) {
     $(day).val(val);
 }
 
-function myFunction(x) {
-    x.classList.toggle("change");
-}
 var click = 0;
 function openNav(x) {
     if (click == 0) {
@@ -102,10 +99,5 @@ function openNav(x) {
         $(".sidenav").css("width", "0px");
         click = 0;
     }
-    x.classList.toggle("change");
-}
-
-function closeNav(x) {
-    document.getElementById("mySidenav").style.width = "0";
     x.classList.toggle("change");
 }
