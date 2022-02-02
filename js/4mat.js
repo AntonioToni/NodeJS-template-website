@@ -89,3 +89,7 @@ function change_month(select) {
     }
     $(day).val(val);
 }
+
+function myFunction(x) {
+    x.classList.toggle("change");
+}
