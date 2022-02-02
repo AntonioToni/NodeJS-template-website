@@ -145,27 +145,11 @@ a{
     color: rgb(17, 48, 48);
     margin-top: 10px;
     transition-duration: 150ms;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .registerbutton:hover{
     background-color: rgb(221, 193, 140);
-}
-
-.navbar-items{
-    display: inline;
-    float: right;
-    padding-right: 10px;
-    padding-top: 5px;
-}
-
-.navbar{
-    list-style-type: none;
-    width: 100%;
-    margin: 0;
-    padding: 5px;
-    overflow: hidden;
-    background-color: rgb(149, 213, 238);
 }
 
 .signbtn{
