@@ -93,3 +93,19 @@ function change_month(select) {
 function myFunction(x) {
     x.classList.toggle("change");
 }
+var click = 0;
+function openNav(x) {
+    if (click == 0) {
+        $(".sidenav").css("width", "240px");
+        click = 1;
+    } else {
+        $(".sidenav").css("width", "0px");
+        click = 0;
+    }
+    x.classList.toggle("change");
+}
+
+function closeNav(x) {
+    document.getElementById("mySidenav").style.width = "0";
+    x.classList.toggle("change");
+}

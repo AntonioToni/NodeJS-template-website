@@ -225,8 +225,41 @@ a{
 
 .containernav{
     display: inline-block;
+    position: relative;
     margin: 5px;
     margin-top: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.sidenav{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 28, 111);
+    overflow-x: hidden;
+    transition: 500ms;
+    padding-top: 50px;
+}
+
+.sidenavexpand{
+    width: 250px;
+}
+
+.sidenav a{
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(178, 218, 233);
+    display: block;
+    transition: 300ms;
+}
+
+.sidenav a:hover{
+    color: rgb(152, 205, 226);
 }
 
 @media (max-width: 500px) {
