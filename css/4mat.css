@@ -278,6 +278,12 @@ span{
     text-decoration: underline;
 }
 
+.signin{
+    margin: 25px;
+    margin-right: 20px;
+    text-align: right;
+}
+
 @media (max-width: 500px) {
     .box{
         width: 340px;
