@@ -279,6 +279,11 @@ span{
     text-decoration: underline;
 }
 
+.sidenav .current{
+    background-color: rgb(0, 54, 218);
+    border-radius: 5px;
+}
+
 .signin{
     margin: 10px;
     margin-right: 15px;
