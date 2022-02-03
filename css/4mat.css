@@ -61,7 +61,8 @@ a{
 
 span{
     font-family: 'Be Vietnam Pro', sans-serif;
-    color: rgb(167, 218, 236);
+    top: 50%;
+    color: rgb(0, 0, 0);
 }
 
 .main{
@@ -279,9 +280,14 @@ span{
 }
 
 .signin{
-    margin: 25px;
-    margin-right: 20px;
+    margin: 10px;
+    margin-right: 15px;
     text-align: right;
+}
+
+.bi{
+    display: inline-block;
+    vertical-align: -0.24em;
 }
 
 @media (max-width: 500px) {
