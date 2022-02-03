@@ -61,7 +61,7 @@ a{
 
 span{
     font-family: 'Be Vietnam Pro', sans-serif;
-    color: rgb(129, 214, 245);
+    color: rgb(167, 218, 236);
 }
 
 .main{
@@ -261,6 +261,7 @@ span{
 .hrnav{
     background-color: rgb(178, 218, 233);
     opacity: 0.5;
+    margin-right: 10px;
 }
 
 .sidenav a{
@@ -275,38 +276,6 @@ span{
 .sidenav a:hover{
     color: rgb(129, 195, 221);
     text-decoration: underline;
-}
-
-.strike {
-    display: block;
-    overflow: hidden;
-    white-space: nowrap; 
-}
-
-.strike > span {
-    position: relative;
-    left: 38px;
-    display: inline-block;
-}
-
-.strike > span:before,
-.strike > span:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 999px;
-    height: 1px;
-    background: rgb(178, 218, 233);
-}
-
-.strike > span:before {
-    right: 100%;
-    margin-right: 10px;
-}
-
-.strike > span:after {
-    left: 100%;
-    margin-left: 10px;
 }
 
 @media (max-width: 500px) {
