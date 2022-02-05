@@ -303,6 +303,25 @@ span{
     border-radius: 10px;
 }
 
+.news-title{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    margin-top: 0px;
+    font-size: 30px;
+    line-height: 34px;
+    color: rgb(0, 28, 111);
+}
+
+.news-image{
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width:1000px) {
+    .box-no-center{
+        width: 380px;
+    }
+}
+
 @media (max-width: 500px) {
     .box{
         width: 340px;
@@ -338,5 +357,23 @@ span{
     }
     .selectbday{
         width: 96px;
+    }
+    .news-image{
+        width: 100%;
+    }
+    .box-no-center{
+        width: 350px;
+    }
+}
+
+@media (max-width:390px) {
+    .box-no-center{
+        width: 320px;
+    }
+}
+
+@media (max-width:360px) {
+    .box-no-center{
+        width: 300px;
     }
 }
