@@ -29,8 +29,7 @@
                     <a href="novosti.html">Novosti</a>
                     <hr class="hrnav">
                     <a href="#"></a>
-                  </div>
-            </div>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -61,11 +60,26 @@
                         <br>
                         <input type="password" placeholder="Lozinka" name="psw" required class="registerinput">
                         <br>
-                        <p class="register-text">Datum rođenja:</p>
+                        <p class="register-text mb-0">Datum rođenja:</p>
                         <select id ="day" name = "dd" class="selectbday"></select>
                         <select  id ="month" name = "mm" onchange="change_month(this)" class="selectbday"></select>
                         <select id ="year" name = "yyyy" onchange="change_year(this)" class="selectbday"></select>
                         <br>
+                        <p class="register-text mb-0">Spol:</p>
+                        <span data-type="radio" class="genderspan">
+                            <span class="gender">
+                                <label for="male" class="gender-label">Muško</label>
+                                <input id="male" type="radio" name="gender" class="genderselect">
+                            </span>
+                            <span class="gender">
+                                <label for="female" class="gender-label">Žensko</label>
+                                <input id="female" type="radio" name="gender" class="genderselect">
+                            </span>
+                            <span class="gender">
+                                <label for="other" class="gender-label">Drugo</label>
+                                <input id="other" type="radio" name="gender" class="genderselect">
+                            </span>
+                        </span>
                         <p class="register-text" style="font-size: smaller;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
                         <button type="submit" class="registerbutton">Registriraj se</button>
                         <br>
