@@ -415,6 +415,10 @@ span{
     .genderspan{
         width: 324px;
     }
+    .genderselect
+    {
+        height: 14px;
+    }
 }
 
 @media (max-width:390px) {
