@@ -416,10 +416,7 @@ span{
         width: 324px;
     }
     .genderselect{
-        border: 0;
-        width: inherit;
-        height: 15px;
-        top: 10px;
+        -webkit-transform: scale(2,2);
     }
 }
 
