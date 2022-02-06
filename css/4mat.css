@@ -415,9 +415,11 @@ span{
     .genderspan{
         width: 324px;
     }
-    .genderselect
-    {
-        height: 14px;
+    .genderselect{
+        border: 0;
+        width: inherit;
+        height: 15px;
+        top: 10px;
     }
 }
 
