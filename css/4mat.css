@@ -416,7 +416,7 @@ span{
         width: 324px;
     }
     .genderselect{
-        -webkit-transform: scale(2,2);
+        -webkit-transform: scale(0.5,0.5);
     }
 }
 
