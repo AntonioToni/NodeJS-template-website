@@ -402,6 +402,7 @@ span{
     }
     h2{
         font-size: 34px;
+        margin-left: 1px;
     }
     .selectbday{
         width: 96px;
@@ -420,6 +421,19 @@ span{
         transform: scale();
         -webkit-transform: scale(0.6,0.6);
         right: 5px;
+    }
+    .box-login{
+        background-color: rgb(178, 218, 233);
+        box-shadow: none;
+        border: 0;
+    }
+    .form-popup{
+        background-color: rgb(178, 218, 233);
+        box-shadow: none;
+        border: 0;
+    }
+    .genderspan{
+        margin-left: 13px;
     }
 }
 
