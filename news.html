@@ -14,7 +14,7 @@
 </head>
 <body class="d-flex flex-column min-vh-100">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row navbar">
       <div class="col">
         <div class="containernav" onclick="openNav(this)">
           <div class="bar1"></div>
@@ -27,6 +27,13 @@
           <hr class="hrnav">
           <a href="about.html">About</a>
         </div>
+      </div>
+      <div class="col-2">
+        <div class="mainicon">
+          <img src="4mat.png" alt="4mat" class="mainicon-img" onclick=document.location="index.html">
+        </div>
+      </div>
+      <div class="col">
         <div class="signin">
           <button type="button" onclick=document.location="login.html" class="btn btn-outline-primary">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
@@ -38,10 +45,10 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container mt-5">
       <div class="row">
         <div class="col m-2">
-          <div class="container box-no-center">
+          <div class="container box-no-center" style="cursor: pointer;" onclick=document.location="news/test.html">
             <p class="news-title">4mat</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, eligendi sit officia beatae odio alias? Ipsum dolore quibusdam in nesciunt eius blanditiis nemo, aspernatur veniam rem labore, atque incidunt assumenda.</p>
           </div>

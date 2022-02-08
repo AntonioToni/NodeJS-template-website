@@ -233,12 +233,12 @@ span{
 .containernav{
     display: inline-block;
     position: fixed;
-    top: 0px;
+    top: 0;
     margin: 10px;
     margin-top: 15px;
     cursor: pointer;
     z-index: 2;
-    transition: 535ms;
+    transition: padding 535ms;
 }
 
 .sidenav{
@@ -284,8 +284,8 @@ span{
 }
 
 .signin{
-    margin: 10px;
-    margin-right: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
     text-align: right;
 }
 
@@ -313,6 +313,17 @@ span{
 .news-image{
     width: 100%;
     border-radius: 5px;
+}
+
+.news-image-article{
+    width: 25%;
+}
+
+.news-text{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
 }
 
 .genderspan{
@@ -361,6 +372,29 @@ span{
 
 .genderselect:focus{
     outline: none;
+}
+
+.container-sm{
+    padding: 50px;
+}
+
+.mainicon{
+    margin-top: 8px;
+    text-align: center;
+}
+
+.mainicon-img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: rgb(155, 212, 233);
+    padding: 0 0 10px 0;
+    position: sticky;
+    top: 0;
+    border-bottom: .1rem solid rgb(37, 37, 37);
 }
 
 @media (max-width:1000px) {
@@ -435,11 +469,26 @@ span{
     .genderspan{
         margin-left: 13px;
     }
+    .container-sm{
+        padding: 10px;
+    }
+    .news-text{
+        font-family: 'Be Vietnam Pro', sans-serif;
+        font-size: 17px;
+        font-weight: normal;
+        line-height: 28px;
+    }
+    .news-image-article{
+        width: 80%;
+    }
 }
 
 @media (max-width:390px) {
     .box-no-center{
         width: 320px;
+    }
+    .signin{
+        margin-right: 0px;
     }
 }
 
