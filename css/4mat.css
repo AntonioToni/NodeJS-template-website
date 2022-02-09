@@ -129,14 +129,14 @@ span{
     padding: 10px;
     border: 0px;
     border-radius: 5px;
-    background-color: rgb(98, 106, 155);
-    color: rgb(0, 28, 111);
+    background-color: rgba(53, 65, 145, 0.9);
+    color: rgb(255, 255, 255);
     margin-top: 10px;
     transition-duration: 200ms;
 }
 
 .loginbutton:hover{
-    background-color: rgb(78, 86, 128);
+    background-color: rgb(53, 65, 145);
 }
 
 .registerbutton{
@@ -145,15 +145,15 @@ span{
     padding: 10px;
     border: 0px;
     border-radius: 5px;
-    background-color: rgb(225, 200, 153);
+    background-color: rgba(100, 209, 78, 0.9);
     color: rgb(17, 48, 48);
     margin-top: 10px;
-    transition-duration: 150ms;
+    transition-duration: 200ms;
     font-size: 14px;
 }
 
 .registerbutton:hover{
-    background-color: rgb(221, 193, 140);
+    background-color: rgb(93, 182, 75);
 }
 
 /* The popup form - hidden by default */
@@ -318,9 +318,9 @@ span{
 
 .news-text{
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 32px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
 }
 
 .news-row{
