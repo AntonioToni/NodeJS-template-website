@@ -95,7 +95,6 @@ span{
     border-left: 8px solid rgb(73, 81, 121);
     color: rgb(7, 11, 22);
     border-radius: 10px;
-    margin-top: max(120px, 22vh);
 }
 
 .title{
@@ -401,6 +400,11 @@ span{
     border-bottom: .1rem solid rgba(0, 0, 0, 0.151);
     box-shadow: 0 0px 14px rgb(141, 141, 141);
     z-index: 1;
+}
+
+.center-items{
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width:1000px) {
