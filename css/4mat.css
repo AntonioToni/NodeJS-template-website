@@ -486,6 +486,9 @@ span{
     .news-image-article{
         width: 80%;
     }
+    .col-2{
+        padding: 0;
+    }
 }
 
 @media (max-width:390px) {
