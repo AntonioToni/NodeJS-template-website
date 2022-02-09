@@ -87,17 +87,15 @@ span{
 }
 
 .box-login{
+    display: block;
     background-color: rgb(255, 255, 255);
-    position: absolute;
     width: 400px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 20px;
     box-shadow: 0px 0px 8px rgb(156, 156, 156);
     border-left: 8px solid rgb(73, 81, 121);
     color: rgb(7, 11, 22);
     border-radius: 10px;
+    margin-top: max(120px, 22vh);
 }
 
 .title{
@@ -162,10 +160,6 @@ span{
 .form-popup {
     background-color: rgb(255, 255, 255);
     display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -45%);
     padding: 0;
     box-shadow: 0px 0px 8px rgb(156, 156, 156);;
     border-left: 8px solid rgb(73, 81, 121);
@@ -174,6 +168,7 @@ span{
     width: 450px;
     padding-bottom: 10px;
     padding-top: 5px;
+    margin-top: max(120px, 22vh);
 }
 
 .name{

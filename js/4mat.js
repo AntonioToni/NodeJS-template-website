@@ -1,9 +1,11 @@
 function openForm() {
     document.getElementById("myForm").style.display = "block";
+    document.getElementById("login").style.display = "none";
 }
 
 function closeForm() {
     document.getElementById("myForm").style.display = "none";
+    document.getElementById("login").style.display = "block";
 }
 
 var Days = [31,28,31,30,31,30,31,31,30,31,30,31];// index => month [0-11]
