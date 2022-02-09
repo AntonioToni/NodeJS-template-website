@@ -4,7 +4,7 @@ p{
 }
 
 body{
-    background-color: rgb(178, 218, 233);
+    background-color: rgb(241, 241, 241);
 }
 
 h1{
@@ -27,7 +27,7 @@ label{
 select{
     font-family: 'Be Vietnam Pro', sans-serif;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(23, 145, 194);
+    border: 1px solid rgb(192, 192, 192);
     border-radius: 5px;
 }
 
@@ -39,7 +39,7 @@ input{
     border-radius: 5px;
     margin: 5px;
     padding: 10px;
-    border: 1px solid rgb(23, 145, 194);
+    border: 1px solid rgb(192, 192, 192);
     transition-duration: 20ms;
 }
 
@@ -73,28 +73,28 @@ span{
 }
 
 .box{
-    background-color: rgb(152, 205, 226);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     width: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    box-shadow: 0px 0px 8px rgb(40, 104, 129);
+    box-shadow: 0px 0px 8px rgb(102, 102, 102);
     border-left: 8px solid rgb(73, 81, 121);
     color: rgb(7, 11, 22);
     border-radius: 10px;
 }
 
 .box-login{
-    background-color: rgb(152, 205, 226);
+    background-color: rgb(246, 252, 255);
     position: absolute;
     width: 400px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
-    box-shadow: 0px 0px 8px rgb(40, 104, 129);
+    box-shadow: 0px 0px 8px rgb(156, 156, 156);
     border-left: 8px solid rgb(73, 81, 121);
     color: rgb(7, 11, 22);
     border-radius: 10px;
@@ -127,10 +127,11 @@ span{
 .loginbutton{
     width: 345px;
     font-weight: bold;
+    font-size: 18px;
     padding: 10px;
     border: 0px;
     border-radius: 5px;
-    background-color: rgb(86, 95, 143);
+    background-color: rgb(98, 106, 155);
     color: rgb(0, 28, 111);
     margin-top: 10px;
     transition-duration: 200ms;
@@ -150,7 +151,7 @@ span{
     color: rgb(17, 48, 48);
     margin-top: 10px;
     transition-duration: 150ms;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .registerbutton:hover{
@@ -159,14 +160,14 @@ span{
 
 /* The popup form - hidden by default */
 .form-popup {
-    background-color: rgb(152, 205, 226);
+    background-color: rgb(255, 255, 255);
     display: none;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 0;
-    box-shadow: 0px 0px 8px rgb(40, 104, 129);
+    box-shadow: 0px 0px 8px rgb(156, 156, 156);;
     border-left: 8px solid rgb(73, 81, 121);
     color: rgb(7, 11, 22);
     border-radius: 10px;
@@ -204,6 +205,7 @@ span{
     margin: 4px;
     padding: 5px;
     font-size: 15px;
+    cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
@@ -295,9 +297,9 @@ span{
 }
 
 .box-no-center{
-    background-color: rgb(152, 205, 226);
+    background-color: rgb(255, 255, 255);
     padding: 20px;
-    box-shadow: 0px 0px 6px rgb(56, 139, 172);
+    border: 1px solid rgba(0, 0, 0, 0.103);
     color: rgb(7, 11, 22);
     border-radius: 10px;
 }
@@ -336,7 +338,7 @@ span{
 
 .gender{
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(23, 145, 194);
+    border: 1px solid rgb(192, 192, 192);
     display: inline-block;
     box-sizing: border-box;
     flex: 1 0 auto;
@@ -352,6 +354,7 @@ span{
 }
 
 .gender-label{
+    cursor: pointer;
     box-sizing: border-box;
     display: inline-block;
     font-size: 15px;
@@ -361,6 +364,7 @@ span{
 }
 
 .genderselect{
+    cursor: pointer;
     height: 36px;
     width: 14px;
     margin: 0;
@@ -390,11 +394,12 @@ span{
 }
 
 .navbar{
-    background-color: rgb(155, 212, 233);
+    background-color: rgb(191, 232, 255);
     padding: 0 0 10px 0;
     position: sticky;
     top: 0;
-    border-bottom: .1rem solid rgb(37, 37, 37);
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.151);
+    box-shadow: 0 0px 14px rgb(141, 141, 141);
 }
 
 @media (max-width:1000px) {
