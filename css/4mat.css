@@ -236,8 +236,8 @@ span{
     display: inline-block;
     position: fixed;
     top: 0;
-    margin: 10px;
-    margin-top: 15px;
+    margin-left: 10px;
+    margin-top: 14px;
     cursor: pointer;
     z-index: 2;
     transition: padding 535ms;
@@ -395,8 +395,9 @@ span{
 
 .navbar{
     background-color: rgb(32, 51, 136);
-    padding: 0 0 10px 0;
-    position: sticky;
+    padding: 0 0 8px 0;
+    position: fixed;
+    width: 100%;
     top: 0;
     border-bottom: .1rem solid rgba(0, 0, 0, 0.151);
     box-shadow: 0 0px 14px rgb(141, 141, 141);
@@ -463,12 +464,10 @@ span{
         right: 5px;
     }
     .box-login{
-        background-color: rgb(178, 218, 233);
         box-shadow: none;
         border: 0;
     }
     .form-popup{
-        background-color: rgb(178, 218, 233);
         box-shadow: none;
         border: 0;
     }
