@@ -433,6 +433,7 @@ span{
     }
     .form-popup{
         width: 350px;
+        margin-top: max(120px, 15vh);;
     }
     .name{
         width: 150px;
@@ -496,6 +497,12 @@ span{
     }
     .signin{
         margin-right: 0px;
+    }
+    .form-popup{
+        width: 340px;
+    }
+    .genderspan{
+        margin-left: 9px;
     }
 }
 
