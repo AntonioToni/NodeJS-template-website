@@ -38,60 +38,58 @@
       </div>
     </div>
   </div>
-  <div style="display:flex;justify-content:center;align-items:center; height: 100%;">
-    <div style="width: auto;">
-      <div class="box-login" id="login">
-        <p class="title">4mat</p>
-        <form class="aligncenter">
-          <div>
-            <input type="text" name="" id="email" placeholder="Email"> <br>
-            <input type="password" name="" id="" placeholder="Lozinka"> <br>
-          </div>
-          <div>
-            <button class="loginbutton">Prijavi se</button> <br>
-          </div>
-          <a class="anodeco" href="">Zaboravili ste lozinku?</a> <br>
-          <hr>
-          <button type="button" class="registerbutton" onclick="openForm()">Kreiraj novi korisnički račun</button>
-        </form>
-      </div>
-      <div class="container form-popup" id="myForm">
-        <form action="/action_page.php" class="aligncenter">
-          <h2 class="register-text" style="margin-left: 14px;">Registriraj se</h2>
-          <p class="register-text">Brzo i jednostavno.</p>
-          <input type="text" placeholder="Ime" name="name" required class="name">
-          <input type="text" placeholder="Prezime" name="lastname" required class="name">
-          <br>
-          <input type="text" placeholder="Email" name="email" required class="registerinput">
-          <br>
-          <input type="password" placeholder="Lozinka" name="psw" required class="registerinput">
-          <br>
-          <p class="register-text mb-0">Datum rođenja:</p>
-          <select id ="day" name = "dd" class="selectbday"></select>
-          <select  id ="month" name = "mm" onchange="change_month(this)" class="selectbday"></select>
-          <select id ="year" name = "yyyy" onchange="change_year(this)" class="selectbday"></select>
-          <br>
-          <p class="register-text mb-0">Spol:</p>
-          <span data-type="radio" class="genderspan">
-            <span class="gender">
-              <label for="male" class="gender-label">Muško</label>
-              <input id="male" type="radio" name="gender" class="genderselect">
-            </span>
-            <span class="gender">
-              <label for="female" class="gender-label">Žensko</label>
-              <input id="female" type="radio" name="gender" class="genderselect">
-            </span>
-            <span class="gender">
-              <label for="other" class="gender-label">Drugo</label>
-              <input id="other" type="radio" name="gender" class="genderselect">
-            </span>
+  <div style="flex:1;display:flex;justify-content:center;align-items:center;">
+    <div class="box-login" id="login">
+      <p class="title">4mat</p>
+      <form class="aligncenter">
+        <div>
+          <input type="text" name="" id="email" placeholder="Email"> <br>
+          <input type="password" name="" id="" placeholder="Lozinka"> <br>
+        </div>
+        <div>
+          <button class="loginbutton">Prijavi se</button> <br>
+        </div>
+        <a class="anodeco" href="">Zaboravili ste lozinku?</a> <br>
+        <hr>
+        <button type="button" class="registerbutton" onclick="openForm()">Kreiraj novi korisnički račun</button>
+      </form>
+    </div>
+    <div class="container form-popup" id="myForm">
+      <form action="/action_page.php" class="aligncenter">
+        <h2 class="register-text" style="margin-left: 14px;">Registriraj se</h2>
+        <p class="register-text">Brzo i jednostavno.</p>
+        <input type="text" placeholder="Ime" name="name" required class="name">
+        <input type="text" placeholder="Prezime" name="lastname" required class="name">
+        <br>
+        <input type="text" placeholder="Email" name="email" required class="registerinput">
+        <br>
+        <input type="password" placeholder="Lozinka" name="psw" required class="registerinput">
+        <br>
+        <p class="register-text mb-0">Datum rođenja:</p>
+        <select id ="day" name = "dd" class="selectbday"></select>
+        <select  id ="month" name = "mm" onchange="change_month(this)" class="selectbday"></select>
+        <select id ="year" name = "yyyy" onchange="change_year(this)" class="selectbday"></select>
+        <br>
+        <p class="register-text mb-0">Spol:</p>
+        <span data-type="radio" class="genderspan">
+          <span class="gender">
+            <label for="male" class="gender-label">Muško</label>
+            <input id="male" type="radio" name="gender" class="genderselect">
           </span>
-          <p class="register-text" style="font-size: smaller;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
-          <button type="submit" class="registerbutton">Registriraj se</button>
-          <br>
-          <a type="button" class="btna" onclick="closeForm()">Već imate korisnički račun?</a>
-        </form>
-      </div>
+          <span class="gender">
+            <label for="female" class="gender-label">Žensko</label>
+            <input id="female" type="radio" name="gender" class="genderselect">
+          </span>
+          <span class="gender">
+            <label for="other" class="gender-label">Drugo</label>
+            <input id="other" type="radio" name="gender" class="genderselect">
+          </span>
+        </span>
+        <p class="register-text" style="font-size: smaller;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
+        <button type="submit" class="registerbutton">Registriraj se</button>
+        <br>
+        <a type="button" class="btna" onclick="closeForm()">Već imate korisnički račun?</a>
+      </form>
     </div>
   </div>
   <footer class="mt-auto">
