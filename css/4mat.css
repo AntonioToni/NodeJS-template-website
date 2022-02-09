@@ -328,6 +328,10 @@ span{
     line-height: 32px;
 }
 
+.news-row{
+    min-height: 220px;
+}
+
 .genderspan{
     display: flex;
     flex-wrap: wrap;
