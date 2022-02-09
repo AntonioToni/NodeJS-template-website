@@ -87,7 +87,7 @@ span{
 }
 
 .box-login{
-    background-color: rgb(246, 252, 255);
+    background-color: rgb(255, 255, 255);
     position: absolute;
     width: 400px;
     top: 50%;
@@ -211,15 +211,15 @@ span{
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: rgb(43, 43, 43);
+    background-color: rgb(223, 223, 223);
     margin: 6px 0;
-    transition: 0.4s;
+    transition: 450ms;
 }
 
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-8px, 6px);
-    background-color: rgb(152, 205, 226);
+    background-color: rgb(221, 51, 51);
 }
   
 .change .bar2 {
@@ -229,7 +229,7 @@ span{
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-9px, -8px);
-    background-color: rgb(152, 205, 226);
+    background-color: rgb(221, 51, 51);
 }
 
 .containernav{
@@ -394,12 +394,13 @@ span{
 }
 
 .navbar{
-    background-color: rgb(191, 232, 255);
+    background-color: rgb(15, 48, 145);
     padding: 0 0 10px 0;
     position: sticky;
     top: 0;
     border-bottom: .1rem solid rgba(0, 0, 0, 0.151);
     box-shadow: 0 0px 14px rgb(141, 141, 141);
+    z-index: 1;
 }
 
 @media (max-width:1000px) {
