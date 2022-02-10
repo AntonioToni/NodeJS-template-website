@@ -439,7 +439,7 @@ span{
     }
     .form-popup{
         width: 350px;
-        margin-top: max(100px, 13vh);
+        margin-top: 20px;
     }
     .name{
         width: 150px;
