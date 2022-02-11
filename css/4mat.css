@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
 p{
     font-family: 'Be Vietnam Pro', sans-serif;
     margin: 5px;
@@ -81,6 +83,7 @@ span{
     border-left: 8px solid rgb(106, 48, 172);
     color: rgb(7, 11, 22);
     border-radius: 10px;
+    height: fit-content;
 }
 
 .box-login{
@@ -405,6 +408,11 @@ span{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.profile-icons{
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width:1000px) {
