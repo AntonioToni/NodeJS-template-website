@@ -234,7 +234,11 @@ span{
     margin-top: 14px;
     cursor: pointer;
     z-index: 2;
-    transition: padding 535ms;
+    transition: padding 530ms;
+}
+
+.containernav-move{
+    padding-left: 160px;
 }
 
 .sidenav{
@@ -251,7 +255,7 @@ span{
 }
 
 .sidenavexpand{
-    width: 250px;
+    width: 240px;
 }
 
 .hrnav{
@@ -445,7 +449,7 @@ span{
     }
 }
 
-@media (max-width:768px){
+@media (max-width:766px){
     .profile-card{
         width: 100%;
         text-align: center;
@@ -453,7 +457,7 @@ span{
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 500px) {
     .box{
         width: 340px;
     }
@@ -531,6 +535,13 @@ span{
     }
     .col-2{
         padding: 0;
+    }
+    .sidenavexpand{
+        width: 100%;
+    }
+    .containernav-move{
+        padding-left: 0;
+        padding-left: 80vw;
     }
 }
 
