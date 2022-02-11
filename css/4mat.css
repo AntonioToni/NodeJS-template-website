@@ -432,6 +432,10 @@ span{
     height: 50px;
 }
 
+.profile-desc{
+    font-size: 16px;
+}
+
 @media (max-width:990px) {
     .box-no-center{
         width: 380px;
@@ -444,6 +448,8 @@ span{
 @media (max-width:768px){
     .profile-card{
         width: 100%;
+        text-align: center;
+        padding: 10px;
     }
 }
 
