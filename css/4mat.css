@@ -432,9 +432,18 @@ span{
     height: 50px;
 }
 
-@media (max-width:1000px) {
+@media (max-width:990px) {
     .box-no-center{
         width: 380px;
+    }
+    .profile-card{
+        width: 70%;
+    }
+}
+
+@media (max-width:768px){
+    .profile-card{
+        width: 100%;
     }
 }
 
