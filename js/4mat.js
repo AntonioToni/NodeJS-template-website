@@ -95,12 +95,12 @@ function change_month(select) {
 var click = 0;
 function openNav(x) {
     if (click == 0) {
-        $(".sidenav").css("width", "240px");
-        $(".containernav").css("padding-left", "160px")
+        document.getElementById("mySidenav").classList.add("sidenavexpand");
+        document.getElementById("navbtn").classList.add("containernav-move");
         click = 1;
     } else {
-        $(".sidenav").css("width", "0px");
-        $(".containernav").css("padding-left", "0px")
+        document.getElementById("mySidenav").classList.remove("sidenavexpand");
+        document.getElementById("navbtn").classList.remove("containernav-move");
         click = 0;
     }
     x.classList.toggle("change");
