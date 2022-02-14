@@ -7,10 +7,10 @@
         <div class="bar3"></div>
       </div>
       <div id="mySidenav" class="sidenav">
-        <a href="/">Početna</a>
-        <a href="/news">Novosti</a>
+        <a <% if (page_name === "index") { %>class="current" <% } %> href="/">Početna</a>
+        <a <% if (page_name === "news") { %>class="current" <% } %> href="/news">Novosti</a>
         <hr class="hrnav">
-        <a href="/about">About</a>
+        <a <% if (page_name === "about") { %>class="current" <% } %> href="/about">About</a>
       </div>
     </div>
     <div class="col-2">

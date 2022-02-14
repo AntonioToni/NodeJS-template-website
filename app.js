@@ -10,24 +10,27 @@ app.set('view engine', 'ejs');
 // Port website will run on
 app.listen(3000);
 
+var page_name;
+page_name: "none"
+
 // *** GET Routes - display pages ***
 // Root Route
 app.get('/', function (req, res) {
-    res.render('pages/index');
+    res.render('pages/index', {page_name: "index"});
 });
 
 app.get('/news', function (req, res) {
-    res.render('pages/news');
+    res.render('pages/news', {page_name: "news"});
 });
 
 app.get('/about', function (req, res) {
-    res.render('pages/about');
+    res.render('pages/about', {page_name: "about"});
 });
 
 app.get('/login', function (req, res) {
-    res.render('pages/login');
+    res.render('pages/login', {page_name: "login"});
 });
 
 app.get('/news-template', function (req, res) {
-    res.render('pages/news-template');
+    res.render('pages/news-template', {page_name: "_news"});
 });
