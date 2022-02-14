@@ -11,7 +11,6 @@ app.set('view engine', 'ejs');
 app.listen(3000);
 
 var page_name;
-page_name: "none"
 
 // *** GET Routes - display pages ***
 // Root Route
@@ -33,4 +32,17 @@ app.get('/login', function (req, res) {
 
 app.get('/news-template', function (req, res) {
     res.render('pages/news-template', {page_name: "_news"});
+});
+
+const mysql = require('mysql');
+const connection = mysql.createConnection({
+    host: 'localhost',
+    port: 3000,
+    user: 'Admin',
+    password: 'password',
+    database: 'database name'
+});
+connection.connect((err) => {
+    if (err) throw err;
+    console.log('Connected!');
 });

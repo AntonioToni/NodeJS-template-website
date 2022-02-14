@@ -21,6 +21,7 @@
   "homepage": "https://github.com/AntonioToni/4mat#readme",
   "dependencies": {
     "ejs": "^3.1.6",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "mysql": "^2.18.1"
   }
 }
