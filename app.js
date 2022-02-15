@@ -34,6 +34,10 @@ app.get('/news-template', function (req, res) {
     res.render('pages/news-template', {page_name: "_news"});
 });
 
+app.get('/profile', function (req, res) {
+    res.render('pages/profile', {page_name: "_profile"});
+});
+
 const mysql = require('mysql');
 const connection = mysql.createConnection({
     host: 'localhost',
