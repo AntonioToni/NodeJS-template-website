@@ -50,3 +50,8 @@ connection.connect((err) => {
     if (err) throw err;
     console.log('Connected!');
 });
+
+
+app.get("*",(req,res) => {
+    res.sendFile(__dirname + "/404.html")
+})
