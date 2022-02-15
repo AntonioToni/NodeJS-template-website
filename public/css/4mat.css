@@ -461,12 +461,14 @@ span{
     width: 100%;
     max-height: 200px;
     object-fit: contain;
+    border-radius: 5px;
 }
 
 .main-image-hot{
     width: 100%;
     max-height: 510px;
     object-fit: contain;
+    border-radius: 5px;
 }
 
 @media (max-width:990px) {
