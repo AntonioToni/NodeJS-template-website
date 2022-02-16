@@ -10,8 +10,6 @@ app.set('view engine', 'ejs');
 // Port website will run on
 app.listen(3000);
 
-var page_name;
-
 // *** GET Routes - display pages ***
 // Root Route
 app.get('/', function (req, res) {
@@ -38,20 +36,19 @@ app.get('/profile', function (req, res) {
     res.render('pages/profile', {page_name: "_profile"});
 });
 
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-    host: 'localhost',
-    port: 3000,
-    user: 'Admin',
-    password: 'password',
-    database: 'database name'
-});
-connection.connect((err) => {
-    if (err) throw err;
-    console.log('Connected!');
-});
-
 
 app.get("*",(req,res) => {
     res.sendFile(__dirname + "/404.html")
 })
+
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/node-mongodb', {useNewUrlParser: true});
+var conn = mongoose.connection;
+conn.on('connected', function() {
+    console.log('database is connected successfully');
+});
+conn.on('disconnected',function(){
+    console.log('database is disconnected successfully');
+})
+conn.on('error', console.error.bind(console, 'connection error:'));
+module.exports = conn;
