@@ -208,7 +208,7 @@ span{
     background-color: rgb(223, 223, 223);
     margin: 6px 0;
     transition: 450ms;
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .change .bar1 {
@@ -469,6 +469,37 @@ span{
     max-height: 510px;
     object-fit: contain;
     border-radius: 5px;
+}
+
+.css-selector {
+    background: linear-gradient(233deg, #672cdd, #2ca5dd, #ddaa2c);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
 }
 
 @media (max-width:990px) {
