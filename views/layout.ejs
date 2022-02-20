@@ -16,7 +16,7 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/4mat.css">
 </head>
-
+<% if (typeof page_name === 'undefined') {page_name=""} %>
 <body class="d-flex flex-column min-vh-100 <% if (page_name === "about") { %>css-selector <% } %>">
   <div class="container-fluid" style="margin-bottom: 80px;">
     <div class="row navbar">
@@ -27,7 +27,6 @@
           <div class="bar3"></div>
         </div>
         <div id="mySidenav" class="sidenav">
-          <% if (page_name === "undefined") return %>
           <a <% if (page_name === "index") { %>class="current" <% } %> href="/">Početna</a>
           <a <% if (page_name === "news") { %>class="current" <% } %> href="/news">Novosti</a>
           <hr class="hrnav">

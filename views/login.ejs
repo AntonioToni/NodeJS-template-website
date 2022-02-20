@@ -1,32 +1,30 @@
 <div class="center-box">
   <div class="box-login" id="login">
-    <p class="title">4mat - Prijava</p>
+    <p class="title">Prijava</p>
     <% include('../partials/messages') %>
     <form action="/users/login" method="POST">
       <div class="form-group">
-        <label for="email">Email</label>
         <input
           type="email"
           id="email"
           name="email"
-          class="form-control"
-          placeholder="Enter Email"
+          class=""
+          placeholder="Email"
         />
       </div>
       <div class="form-group">
-        <label for="password">Password</label>
         <input
           type="password"
           id="password"
           name="password"
-          class="form-control"
-          placeholder="Enter Password"
+          class=""
+          placeholder="Lozinka"
         />
       </div>
-      <button type="submit" class="btn btn-primary btn-block">Login</button>
+      <button type="submit" class="loginbutton">Login</button>
     </form>
-    <p class="lead mt-4">
-      No Account? <a href="/register">Register</a>
+    <p class="mt-4">
+      Nemate račun? <a href="/register">Registrirajte se</a>
     </p>
   </div>
 </div>

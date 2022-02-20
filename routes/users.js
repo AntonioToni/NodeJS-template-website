@@ -18,11 +18,11 @@ router.post('/register', (req, res) => {
   let errors = [];
 
   if (!name || !email || !password) {
-    errors.push({ msg: 'Please enter all fields' });
+    errors.push({ msg: 'Molimo ispunite sva polja!' });
   }
 
   if (password.length < 6) {
-    errors.push({ msg: 'Password must be at least 6 characters' });
+    errors.push({ msg: 'Lozinka mora biti duža od 6 karaktera!' });
   }
 
   if (errors.length > 0) {
@@ -38,7 +38,7 @@ router.post('/register', (req, res) => {
   } else {
     User.findOne({ email: email }).then(user => {
       if (user) {
-        errors.push({ msg: 'Email already exists' });
+        errors.push({ msg: 'Email već postoji!' });
         res.render('register', {
           errors,
           name,
@@ -67,7 +67,7 @@ router.post('/register', (req, res) => {
               .then(user => {
                 req.flash(
                   'success_msg',
-                  'You are now registered and can log in'
+                  'Registrirani ste i sada se možete prijaviti.'
                 );
                 res.redirect('/login');
               })
@@ -91,7 +91,7 @@ router.post('/login', (req, res, next) => {
 // Logout
 router.get('/logout', (req, res) => {
   req.logout();
-  req.flash('success_msg', 'You are logged out');
+  req.flash('success_msg', 'Odjavljeni ste');
   res.redirect('/login');
 });
 

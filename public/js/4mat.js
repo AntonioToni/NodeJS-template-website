@@ -10,7 +10,7 @@ function closeForm() {
 
 var Days = [31,28,31,30,31,30,31,31,30,31,30,31];// index => month [0-11]
 $(document).ready(function(){
-    var option = '<option value="day">day</option>';
+    var option = '<option value="day">dan</option>';
     var selectedDay="day";
     for (var i=1;i <= Days[0];i++){ //add option days
         option += '<option value="'+ i + '">' + i + '</option>';
@@ -18,7 +18,7 @@ $(document).ready(function(){
     $('#day').append(option);
     $('#day').val(selectedDay);
 
-    var option = '<option value="month">month</option>';
+    var option = '<option value="month">mjesec</option>';
     var selectedMon ="month";
     for (var i=1;i <= 12;i++){
         option += '<option value="'+ i + '">' + i + '</option>';
@@ -27,7 +27,7 @@ $(document).ready(function(){
     $('#month').val(selectedMon);
 
     var d = new Date();
-    var option = '<option value="year">year</option>';
+    var option = '<option value="year">godina</option>';
     selectedYear ="year";
     for (var i=1930;i <= d.getFullYear();i++){// years start i
         option += '<option value="'+ i + '">' + i + '</option>';

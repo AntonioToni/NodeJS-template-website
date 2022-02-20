@@ -1,9 +1,8 @@
 <div class="center-box">
   <div class="box-register" id="register">
-    <h1 class="text-center mb-3">
-      <i class="fas fa-user-plus"></i> Register
-    </h1>
-    <%= include("../partials/messages"); %>
+    <h1 class="register-text" style="margin-left: 8px;">Registriraj se</h1>
+    <p class="register-text" style="margin-left: 10px;">Brzo i jednostavno</p>
+    <%- include("../partials/messages"); %>
     <form action="/register" method="POST" class="aligncenter">
       <div class="form-group">
         <input
@@ -11,7 +10,7 @@
           id="name"
           name="name"
           class="registerinput"
-          placeholder="Enter Name"
+          placeholder="Ime"
           value="<%= typeof name != 'undefined' ? name : '' %>"
         />
       </div>
@@ -21,7 +20,7 @@
           id="lastName"
           name="lastName"
           class="registerinput"
-          placeholder="Enter Last Name"
+          placeholder="Prezime"
           value="<%= typeof lastName != 'undefined' ? lastName : '' %>"
         />
       </div>
@@ -31,7 +30,7 @@
           id="email"
           name="email"
           class="registerinput"
-          placeholder="Enter Email"
+          placeholder="Email"
           value="<%= typeof email != 'undefined' ? email : '' %>"
         />
       </div>
@@ -41,20 +40,24 @@
           id="password"
           name="password"
           class="registerinput"
-          placeholder="Create Password"
+          placeholder="Lozinka"
           value="<%= typeof password != 'undefined' ? password : '' %>"
         />
       </div>
       <div class="form-group">
-        <label for="dateOfBirth">Date of Birth</label> <br>
-        <div style="margin-left: 5px;">
+        <div class="register-text">
+          <label class="register-label" for="dateOfBirth">Datum rođenja</label>
+        </div>
+        <div>
           <select  id ="month" name = "dateOfBirth" onchange="change_month(this)" class="selectbday"></select>
           <select id ="day" name = "dateOfBirth" class="selectbday"></select>
           <select id ="year" name = "dateOfBirth" onchange="change_year(this)" class="selectbday"></select>
         </div>
       </div>
       <div class="form-group">
-        <label for="gender">Spol:</label>
+        <div class="register-text">
+          <label class="register-label" for="gender">Spol:</label>
+        </div>
         <span data-type="radio" class="genderspan" id="sex">
           <span class="gender">
             <label for="male" class="gender-label">Muško</label>
@@ -70,10 +73,11 @@
           </span>
         </span>
       </div>
+      <p class="register-text" style="font-size: smaller; margin-left: 12px;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
       <button type="submit" class="registerbutton">
-        Register
-      </button>      
-      <p class="lead mt-4">Have An Account? <a href="/login">Login</a></p>
+        Registriraj se
+      </button>
+      <p class="mt-2">Imate račun? <a href="/login">Prijavite se</a></p> 
     </form>
   </div>
 </div>
