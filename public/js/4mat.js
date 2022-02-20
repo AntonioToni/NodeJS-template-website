@@ -29,7 +29,7 @@ $(document).ready(function(){
     var d = new Date();
     var option = '<option value="year">godina</option>';
     selectedYear ="year";
-    for (var i=1930;i <= d.getFullYear();i++){// years start i
+    for (var i=1950;i <= d.getFullYear();i++){// years start i
         option += '<option value="'+ i + '">' + i + '</option>';
     }
     $('#year').append(option);

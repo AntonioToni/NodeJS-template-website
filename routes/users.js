@@ -14,9 +14,12 @@ router.get('/register', forwardAuthenticated, (req, res) => res.render('register
 
 // Register
 router.post('/register', (req, res) => {
-  const { name, lastName, email, password, dateOfBirth, gender} = req.body;
+  let { name, lastName, email, password, dateOfBirth, gender} = req.body;
   let errors = [];
-
+  var DoB = Array.from(dateOfBirth.join('-'));
+  DoB = DoB.toString();
+  DoB = DoB.replaceAll(',', '');
+  dateOfBirth = DoB;
   if (!name || !email || !password) {
     errors.push({ msg: 'Molimo ispunite sva polja!' });
   }
@@ -54,7 +57,7 @@ router.post('/register', (req, res) => {
           lastName,
           email,
           password,
-          dateOfBirth,
+          DoB,
           gender
         });
 

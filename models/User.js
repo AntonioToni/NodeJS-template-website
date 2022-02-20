@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+var DateOnly = require('mongoose-dateonly')(mongoose);
 
 mongoose.NativeDate
 const UserSchema = new mongoose.Schema({
@@ -18,23 +19,19 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  dateOfBirth: {
-    type: Date,
+  DoB: {
+    type: String,
     required: true
   },
   gender: {
     type: String,
     required: true
   },
-  date: {
-    type: Date,
-    default: Date.now
-  },
   admin: {
     type: Boolean,
     default: false
   }
-});
+}, {timestamps: true});
 
 const User = mongoose.model('User', UserSchema);
 
