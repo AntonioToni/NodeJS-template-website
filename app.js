@@ -1,57 +1,64 @@
-// Load Node modules
-var express = require('express');
-const ejs = require('ejs');
-// Initialise Express
-var app = express();
-// Render static files
-app.use(express.static('public'));
-// Set the view engine to ejs
+const express = require('express');
+const expressLayouts = require('express-ejs-layouts');
+const mongoose = require('mongoose');
+const passport = require('passport');
+const flash = require('connect-flash');
+const session = require('express-session');
+
+const app = express();
+
+
+// Passport Config
+require('./config/passport')(passport);
+
+// DB Config
+const db = require('./config/keys').mongoURI;
+
+// Connect to MongoDB
+mongoose
+  .connect(
+    db,
+    { useNewUrlParser: true ,useUnifiedTopology: true}
+  )
+  .then(() => console.log('MongoDB Connected'))
+  .catch(err => console.log(err));
+
+// EJS
+app.use(expressLayouts);
 app.set('view engine', 'ejs');
-// Port website will run on
-app.listen(3000);
 
-var page_name;
+// Express body parser
+app.use(express.urlencoded({ extended: true }));
 
-// *** GET Routes - display pages ***
-// Root Route
-app.get('/', function (req, res) {
-    res.render('pages/index', {page_name: "index"});
+// Express session
+app.use(
+  session({
+    secret: 'secret',
+    resave: true,
+    saveUninitialized: true
+  })
+);
+
+// Passport middleware
+app.use(passport.initialize());
+app.use(passport.session());
+
+// Connect flash
+app.use(flash());
+
+// Global variables
+app.use(function(req, res, next) {
+  res.locals.success_msg = req.flash('success_msg');
+  res.locals.error_msg = req.flash('error_msg');
+  res.locals.error = req.flash('error');
+  next();
 });
 
-app.get('/news', function (req, res) {
-    res.render('pages/news', {page_name: "news"});
-});
+// Routes
+app.use('/', require('./routes/index.js'));
+app.use('/', require('./routes/users.js'));
+app.use(express.static(__dirname + '/public'));
 
-app.get('/about', function (req, res) {
-    res.render('pages/about', {page_name: "about"});
-});
+const PORT = process.env.PORT || 5000;
 
-app.get('/login', function (req, res) {
-    res.render('pages/login', {page_name: "login"});
-});
-
-app.get('/news-template', function (req, res) {
-    res.render('pages/news-template', {page_name: "_news"});
-});
-
-app.get('/profile', function (req, res) {
-    res.render('pages/profile', {page_name: "_profile"});
-});
-
-const mysql = require('mysql');
-const connection = mysql.createConnection({
-    host: 'localhost',
-    port: 3000,
-    user: 'Admin',
-    password: 'password',
-    database: 'database name'
-});
-connection.connect((err) => {
-    if (err) throw err;
-    console.log('Connected!');
-});
-
-
-app.get("*",(req,res) => {
-    res.sendFile(__dirname + "/404.html")
-})
+app.listen(PORT, console.log(`Server running on  ${PORT}`));

@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="hr">
-<head>
-  <%- include('../partials/head') %>
-</head>
+
 <body class="d-flex flex-column min-vh-100">
   <%- include('../partials/nav') %>
   <div class="center-box">
@@ -11,10 +7,10 @@
       <form class="aligncenter">
         <div>
           <input type="text" name="" id="email" placeholder="Email"> <br>
-          <input type="password" name="" id="" placeholder="Lozinka"> <br>
+          <input type="password" name="" id="password" placeholder="Lozinka"> <br>
         </div>
         <div>
-          <button class="loginbutton">Prijavi se</button> <br>
+          <button class="loginbutton">Prijavi se</button> <br> 
         </div>
         <a class="anodeco" href="">Zaboravili ste lozinku?</a> <br>
         <hr>
@@ -22,15 +18,15 @@
       </form>
     </div>
     <div class="container form-popup" id="myForm">
-      <form action="/action_page.php" class="aligncenter">
-        <h2 class="register-text" style="margin-left: 14px;">Registriraj se</h2>
+      <form action="/users/login" method="POST" class="aligncenter">
+        <h2 class="register-text" style="margin-left: 14px;">Registriraj se</h2> <!--Register-->
         <p class="register-text">Brzo i jednostavno.</p>
         <input type="text" placeholder="Ime" name="name" required class="name">
-        <input type="text" placeholder="Prezime" name="lastname" required class="name">
+        <input type="text" placeholder="Prezime" name="lastName" required class="name">
         <br>
         <input type="text" placeholder="Email" name="email" required class="registerinput">
         <br>
-        <input type="password" placeholder="Lozinka" name="psw" required class="registerinput">
+        <input type="password" placeholder="Lozinka" name="password" required class="registerinput">
         <br>
         <p class="register-text mb-0">Datum rođenja:</p>
         <select id ="day" name = "dd" class="selectbday"></select>
@@ -59,6 +55,5 @@
       </form>
     </div>
   </div>
-  <%- include('../partials/footer') %>
 </body>
-</html>
+

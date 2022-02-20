@@ -156,11 +156,10 @@ span{
     background-color: rgb(93, 182, 75);
 }
 
-/* The popup form - hidden by default */
-.form-popup {
+.box-register {
     background-color: rgb(255, 255, 255);
-    display: none;
-    padding: 0;
+    display: block;
+    padding: 4px;
     box-shadow: 0px 0px 8px rgb(156, 156, 156);;
     border-left: 8px solid rgb(73, 81, 121);
     color: rgb(7, 11, 22);
@@ -337,7 +336,7 @@ span{
     flex-wrap: wrap;
     width: 425px;
     margin-top: 0;
-    margin-left: 9px;
+    margin-left: 5px;
 }
 
 .gender{
@@ -409,7 +408,7 @@ span{
 }
 
 .center-box{
-    flex: 1;
+    flex: 1 0 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -541,7 +540,7 @@ span{
         font-size: 14px;
         font-weight: 500;
     }
-    .form-popup{
+    .box-register{
         width: 350px;
     }
     .name{
@@ -576,7 +575,7 @@ span{
         box-shadow: none;
         border: 0;
     }
-    .form-popup{
+    .box-register{
         box-shadow: none;
         border: 0;
     }
@@ -614,7 +613,7 @@ span{
     .signin{
         margin-right: 0px;
     }
-    .form-popup{
+    .box-register{
         width: 340px;
     }
     .genderspan{

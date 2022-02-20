@@ -1,0 +1,79 @@
+<div class="center-box">
+  <div class="box-register" id="register">
+    <h1 class="text-center mb-3">
+      <i class="fas fa-user-plus"></i> Register
+    </h1>
+    <%= include("../partials/messages"); %>
+    <form action="/register" method="POST" class="aligncenter">
+      <div class="form-group">
+        <input
+          type="name"
+          id="name"
+          name="name"
+          class="registerinput"
+          placeholder="Enter Name"
+          value="<%= typeof name != 'undefined' ? name : '' %>"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="lastName"
+          id="lastName"
+          name="lastName"
+          class="registerinput"
+          placeholder="Enter Last Name"
+          value="<%= typeof lastName != 'undefined' ? lastName : '' %>"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="registerinput"
+          placeholder="Enter Email"
+          value="<%= typeof email != 'undefined' ? email : '' %>"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="registerinput"
+          placeholder="Create Password"
+          value="<%= typeof password != 'undefined' ? password : '' %>"
+        />
+      </div>
+      <div class="form-group">
+        <label for="dateOfBirth">Date of Birth</label> <br>
+        <div style="margin-left: 5px;">
+          <select  id ="month" name = "dateOfBirth" onchange="change_month(this)" class="selectbday"></select>
+          <select id ="day" name = "dateOfBirth" class="selectbday"></select>
+          <select id ="year" name = "dateOfBirth" onchange="change_year(this)" class="selectbday"></select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="gender">Spol:</label>
+        <span data-type="radio" class="genderspan" id="sex">
+          <span class="gender">
+            <label for="male" class="gender-label">Muško</label>
+            <input id="male" type="radio" name="gender" class="genderselect" value="Muško">
+          </span>
+          <span class="gender">
+            <label for="female" class="gender-label">Žensko</label>
+            <input id="female" type="radio" name="gender" class="genderselect" value="Žensko">
+          </span>
+          <span class="gender">
+            <label for="other" class="gender-label">Drugo</label>
+            <input id="other" type="radio" name="gender" class="genderselect" value="Drugo">
+          </span>
+        </span>
+      </div>
+      <button type="submit" class="registerbutton">
+        Register
+      </button>      
+      <p class="lead mt-4">Have An Account? <a href="/login">Login</a></p>
+    </form>
+  </div>
+</div>
