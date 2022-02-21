@@ -1,14 +1,14 @@
 <div class="center-box">
   <div class="box-login" id="login">
     <p class="title">Prijava</p>
-    <% include('../partials/messages') %>
-    <form action="/users/login" method="POST">
+    <%- include('../partials/messages') %>
+    <form action="/login" method="POST">
       <div class="form-group">
         <input
           type="email"
           id="email"
           name="email"
-          class=""
+          class="form-control"
           placeholder="Email"
         />
       </div>
@@ -17,7 +17,7 @@
           type="password"
           id="password"
           name="password"
-          class=""
+          class="form-control"
           placeholder="Lozinka"
         />
       </div>
