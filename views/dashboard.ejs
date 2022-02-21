@@ -1,9 +1,8 @@
 <h1 class="mt-4">Dashboard</h1>
-<p class="lead mb-3">Welcome <%= user.name %></p>
 <div class="container">
-    <div class="profile-card">
+    <div class="profile-card mt-3">
       <div>
-        <h2>Welcome <%= user.name %></h2>
+        <h2>Dobrodošli <%= user.name %></h2>
         <hr>
         <p class="profile-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere corrupti minima impedit reiciendis? Exercitationem fugiat saepe quod blanditiis, eius nisi ipsum excepturi sapiente repellendus accusantium, itaque similique deserunt eaque omnis.</p>
         <div class="profile-icons">
@@ -11,7 +10,9 @@
           <a href=""><i class="bi bi-envelope" style="font-size: 24px;"></i></a>
           <a href=""></a>
         </div>
+        <div style="text-align: center;">
+          <a href="/logout" class="btn btn-secondary">Logout</a>
+        </div>
       </div>
     </div>
   </div>
-<a href="/logout" class="btn btn-secondary">Logout</a>
