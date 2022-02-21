@@ -59,6 +59,10 @@ app.use('/', require('./routes/index.js'));
 app.use('/', require('./routes/users.js'));
 app.use(express.static(__dirname + '/public'));
 
+app.get("*",(req,res) => {
+  res.sendFile(__dirname + "/404.html")
+})
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, console.log(`Server running on  ${PORT}`));
