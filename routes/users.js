@@ -20,7 +20,12 @@ router.post('/register', (req, res) => {
   DoB = DoB.toString();
   DoB = DoB.replaceAll(',', '');
   dateOfBirth = DoB;
-  if (!name || !email || !password) {
+  if (!name || !lastName || !email || !password || !dateOfBirth || !gender) {
+    errors.push({ msg: 'Molimo ispunite sva polja!' });
+  }
+
+  if (dateOfBirth.includes("day") || dateOfBirth.includes("month") || dateOfBirth.includes("year"))
+  {
     errors.push({ msg: 'Molimo ispunite sva polja!' });
   }
 
