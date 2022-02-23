@@ -596,7 +596,7 @@ span{
         border: 0;
     }
     .genderspan{
-        margin-left: 13px;
+        margin-left: 9px;
     }
     .container-sm{
         padding: 10px;
@@ -619,6 +619,10 @@ span{
     .containernav-move{
         padding-left: 0;
         padding-left: 80vw;
+    }
+    .register-label{
+        margin-top: 2px;
+        padding-top: 0;
     }
 }
 
