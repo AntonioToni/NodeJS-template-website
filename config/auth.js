@@ -11,5 +11,11 @@ module.exports = {
       return next();
     }
     res.redirect('/dashboard');      
+  },
+  isLoggedIn: function(req, res) {
+    if (req.isAuthenticated()) {
+      return true;
+    }
+    return false;
   }
 };

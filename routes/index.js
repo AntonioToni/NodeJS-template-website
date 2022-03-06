@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { ensureAuthenticated, forwardAuthenticated } = require('../config/auth');
+const { ensureAuthenticated, forwardAuthenticated, isLoggedIn } = require('../config/auth');
 
 // Welcome Page
 //router.get('/', forwardAuthenticated, (req, res) => res.render('welcome'));
@@ -15,49 +15,57 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
 router.get('/', function(req, res, next) {
   res.render('index', {
     page_name: "index", 
-    title: '4mat'
+    title: '4mat',
+    isLoggedIn
   });
 });
 
 router.get('/login', function (req, res) {
   res.render('login', {
-    page_name: "login"
+    page_name: "login",
+    isLoggedIn
   });
 });
 router.get('/register', function (req, res) {
   res.render('register', {
-    page_name: "register"
+    page_name: "register",
+    isLoggedIn
   });
 });
 
 // Pages
 router.get('/news', function (req, res) {
   res.render('news', {
-    page_name: "news"
+    page_name: "news",
+    isLoggedIn
   });
 });
 
 router.get('/about', function (req, res) {
   res.render('about', {
-    page_name: "about"
+    page_name: "about",
+    isLoggedIn
   });
 });
 
 router.get('/login', function (req, res) {
   res.render('login', {
-    page_name: "login"
+    page_name: "login",
+    isLoggedIn
   });
 });
 
 router.get('/news-template', function (req, res) {
   res.render('news-template', {
-    page_name: "_news"
+    page_name: "_news",
+    isLoggedIn
   });
 });
 
 router.get('/profile', function (req, res) {
   res.render('profile', {
-    page_name: "_profile"
+    page_name: "_profile",
+    isLoggedIn
   });
 });
 
