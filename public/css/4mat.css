@@ -157,6 +157,20 @@ span{
     background-color: rgb(93, 182, 75);
 }
 
+.profile-button{
+    display: inline-block;
+    border: 1px solid transparent;
+    outline: transparent;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: transparent;
+    vertical-align: -8px;
+}
+
 .box-register {
     background-color: rgb(255, 255, 255);
     display: block;
