@@ -34,25 +34,22 @@ router.get('/register', function (req, res) {
 // Pages
 router.get('/news', function (req, res) {
   res.render('news', {
-    page_name: "news"
+    page_name: "news",
+    user: req.user
   });
 });
 
 router.get('/about', function (req, res) {
   res.render('about', {
-    page_name: "about"
-  });
-});
-
-router.get('/login', function (req, res) {
-  res.render('login', {
-    page_name: "login"
+    page_name: "about",
+    user: req.user
   });
 });
 
 router.get('/news-template', function (req, res) {
   res.render('news-template', {
-    page_name: "_news"
+    page_name: "_news",
+    user: req.user
   });
 });
 
