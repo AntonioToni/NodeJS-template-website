@@ -42,11 +42,12 @@ input{
     margin: 5px;
     padding: 10px;
     border: 1px solid rgb(192, 192, 192);
-    transition-duration: 20ms;
+    transition-duration: 50ms;
 }
 
 input:focus{
-    outline: 1px solid rgb(23, 145, 194);
+    outline: 4px solid rgb(180, 225, 255);
+    border: 1px solid rgb(125, 157, 255);
 }
 
 button{
@@ -124,7 +125,7 @@ span{
 }
 
 .loginbutton{
-    width: 345px;
+    width: 100%;
     font-weight: bold;
     font-size: 18px;
     padding: 10px;
@@ -498,6 +499,15 @@ span{
     background-color: rgb(255, 255, 255);
     outline: 1px solid rgb(105, 105, 105);
     border: none;
+}
+
+.new-post-card{
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    color: rgb(7, 11, 22);
+    border-radius: 10px;
+    min-width: 350px
 }
 
 .css-selector {
