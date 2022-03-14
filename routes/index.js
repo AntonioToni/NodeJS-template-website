@@ -59,5 +59,11 @@ router.get('/profile', function (req, res) {
   });
 });
 
+router.get('/new-post', function (req, res) {
+  res.render('newpost', {
+    page_name: "newpost",
+    user: req.user
+  });
+});
 
 module.exports = router;
