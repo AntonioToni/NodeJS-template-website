@@ -10,11 +10,11 @@ router.get('/dashboard', ensureAuthenticated, (req, res) =>
   res.render('dashboard', {
     user: req.user
   })
-); 
+);
 
 router.get('/', function(req, res, next) {
   res.render('index', {
-    page_name: "index", 
+    page_name: "index",
     title: '4mat',
     user: req.user
   });
