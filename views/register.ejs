@@ -9,17 +9,15 @@
           type="name"
           id="name"
           name="name"
-          class="registerinput"
+          class="name"
           placeholder="Ime"
           value="<%= typeof name != 'undefined' ? name : '' %>"
         />
-      </div>
-      <div class="form-group">
         <input
           type="lastName"
           id="lastName"
           name="lastName"
-          class="registerinput"
+          class="name"
           placeholder="Prezime"
           value="<%= typeof lastName != 'undefined' ? lastName : '' %>"
         />
@@ -46,7 +44,7 @@
       </div>
       <div class="form-group">
         <div class="register-text">
-          <label class="register-label" for="dateOfBirth">Datum rođenja:</label>
+          <label class="register-label" for="dateOfBirth">Datum rođenja</label>
         </div>
         <div>
           <select id ="day" name = "dateOfBirth" class="selectbday"></select>
@@ -56,9 +54,9 @@
       </div>
       <div class="form-group">
         <div class="register-text">
-          <label class="register-label" for="gender">Spol:</label>
+          <label class="register-label" for="gender">Spol</label>
         </div>
-        <span data-type="radio" class="genderspan" id="sex">
+        <span class="genderspan">
           <span class="gender">
             <label for="male" class="gender-label">Muško</label>
             <input id="male" type="radio" name="gender" class="genderselect" value="Muško">
@@ -73,7 +71,7 @@
           </span>
         </span>
       </div>
-      <p class="register-text" style="font-size: smaller; margin-left: 12px;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
+      <p class="register-text" style="font-size: smaller; color: rgb; margin-left: 12px;">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
       <button type="submit" class="registerbutton">
         Registriraj se
       </button>

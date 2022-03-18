@@ -187,6 +187,7 @@ span{
 
 .name{
     width: 200px;
+    margin: 5px 5px 10px;
 }
 
 .registerinput{
@@ -371,7 +372,7 @@ span{
     text-align: left;
     width: auto;
     position: relative;
-    margin: 8px 6px 6px;
+    margin: 4px 6px 6px;
     padding: 0px;
     font-size: 15px;
     border-radius: 5px;
@@ -585,17 +586,17 @@ span{
         width: 350px;
     }
     .name{
-        width: 150px;
+        width: 153px;
     }
     .registerinput{
-        width: 314px;
+        width: 320px;
     }
     h2{
         font-size: 34px;
         margin-left: 1px;
     }
     .selectbday{
-        width: 96px;
+        width: 99px;
     }
     .news-image{
         width: 100%;
@@ -604,7 +605,8 @@ span{
         width: 350px;
     }
     .genderspan{
-        width: 324px;
+        width: 334px;
+        margin-left: 4px;
     }
     .genderselect{
         width: 20px;
@@ -619,9 +621,6 @@ span{
     .box-register{
         box-shadow: none;
         border: 0;
-    }
-    .genderspan{
-        margin-left: 9px;
     }
     .container-sm{
         padding: 10px;
