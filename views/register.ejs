@@ -1,7 +1,7 @@
 <div class="center-box">
   <div class="box-register" id="register">
-    <h1 class="register-text" style="margin-left: 8px;">Registriraj se</h1>
-    <p class="register-text" style="margin-left: 10px;">Brzo i jednostavno</p>
+    <h1 class="register-text" style="margin-left: 8px;">Register</h1>
+    <p class="register-text" style="margin-left: 10px;">Fast and easy</p>
     <%- include("../partials/messages"); %>
     <form action="/register" method="POST" class="aligncenter">
       <div class="form-group">
@@ -10,7 +10,7 @@
           id="name"
           name="name"
           class="name"
-          placeholder="Ime"
+          placeholder="Name"
           value="<%= typeof name != 'undefined' ? name : '' %>"
         />
         <input
@@ -18,7 +18,7 @@
           id="lastName"
           name="lastName"
           class="name"
-          placeholder="Prezime"
+          placeholder="Last Name"
           value="<%= typeof lastName != 'undefined' ? lastName : '' %>"
         />
       </div>
@@ -38,13 +38,13 @@
           id="password"
           name="password"
           class="registerinput"
-          placeholder="Lozinka"
+          placeholder="Password"
           value="<%= typeof password != 'undefined' ? password : '' %>"
         />
       </div>
       <div class="form-group">
         <div class="register-text">
-          <label class="register-label" for="dateOfBirth">Datum rođenja</label>
+          <label class="register-label" for="dateOfBirth">Date of birth:</label>
         </div>
         <div>
           <select id ="day" name = "dateOfBirth" class="selectbday"></select>
@@ -54,30 +54,30 @@
       </div>
       <div class="form-group">
         <div class="register-text">
-          <label class="register-label" for="gender">Spol</label>
+          <label class="register-label" for="gender">Gender</label>
         </div>
         <span class="genderspan">
           <span class="gender">
-            <label for="male" class="gender-label">Muško</label>
+            <label for="male" class="gender-label">Male</label>
             <input id="male" type="radio" name="gender" class="genderselect" value="Muško">
           </span>
           <span class="gender">
-            <label for="female" class="gender-label">Žensko</label>
+            <label for="female" class="gender-label">Female</label>
             <input id="female" type="radio" name="gender" class="genderselect" value="Žensko">
           </span>
           <span class="gender">
-            <label for="other" class="gender-label">Drugo</label>
+            <label for="other" class="gender-label">Other</label>
             <input id="other" type="radio" name="gender" class="genderselect" value="Drugo">
           </span>
         </span>
       </div>
       <div style="font-size: smaller; opacity: 0.8; margin-left: 6px;">
-        <p class="register-text">Registracijom se slažete sa našim <a href="" class="anodeco">Uvjetima korištenja</a>.</p>
+        <p class="register-text">By registering you agree on our <a href="" class="anodeco">Terms & Conditions</a>.</p>
       </div>
       <button type="submit" class="registerbutton">
-        Registriraj se
+        Register
       </button>
-      <p class="mt-2">Imate račun? <a href="/login">Prijavite se</a></p> 
+      <p class="mt-2">Already have an account?<a href="/login">Login</a></p> 
     </form>
   </div>
 </div>
