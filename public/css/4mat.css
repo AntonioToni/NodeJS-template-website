@@ -472,9 +472,10 @@ span{
     border-radius: 10px;
     height: fit-content;
     margin: 5px;
+    overflow: hidden;
 }
 
-.main-hot-row{
+.main-hot-row-old{
     height: 50%;
 }
 
@@ -661,7 +662,7 @@ span{
         width: 340px;
     }
     .genderspan{
-        margin-left: 9px;
+        margin-left: 0px;
     }
 }
 

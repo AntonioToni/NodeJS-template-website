@@ -1,6 +1,6 @@
 <div class="center-box">
   <div class="box-login" id="login">
-    <p class="title">Login</p>
+    <p class="title">Prijava</p>
     <%- include('../partials/messages') %>
     <form action="/login" method="POST">
       <div class="form-group">
@@ -18,15 +18,15 @@
           id="password"
           name="password"
           class="form-control"
-          placeholder="Password"
+          placeholder="Lozinka"
         />
       </div>
-      <button type="submit" class="loginbutton">Login</button>
+      <button type="submit" class="loginbutton">Prijavi se</button>
     </form>
     <div class="aligncenter">
-      <a class="anodeco" href="">Forgot password?</a>
+      <a class="anodeco" href="">Zaboravili ste lozinku?</a>
       <hr>
-      <button onclick=document.location="/register" class="registerbutton">Register</button>
+      <button onclick=document.location="/register" class="registerbutton">Registriraj se</button>
     </div>
   </div>
 </div>
